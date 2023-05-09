@@ -1,0 +1,8 @@
+import csv from that day with vairable name set to file name (will be yy/mm/dd format)
+
+plot each graph and export high quality png (play around witb sizes, add options?)
+
+loop for all files in folder
+
+track with csv tracking what has been produced (day vs y/n box for each possible graph)
+
