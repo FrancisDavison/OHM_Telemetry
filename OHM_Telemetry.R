@@ -2,14 +2,17 @@ Telemetry_Raw = read.csv('.//LOGS/OpenHardwareMonitorLog-2023-04-23.csv', header
 Telemetry_Plot = Telemetry_Raw[-(1:1),]
 Telemetry_Head = colnames(Telemetry_Plot)
 
-Combinations <- expand.grid(Telemetry_Head, Telemetry_Head, stringsAsFactore = FALSE)
+Combinations <- expand.grid(Telemetry_Head, Telemetry_Head, stringsAsFactors = FALSE)
 
 for(i in 1:nrow(Combinations))
 {
-	x <- Combinations[i, 1]
-	y <- Combinations[i, 2]
+	xaxis <- Combinations[i, 1]
+	yaxis <- Combinations[i, 2]
 }
-plot(Telemetry_Plot$[, x], Telemetry_Plot$[, y]											
+plot(Telemetry_Plot$xaxis, Telemetry_Plot$yaxis)
+
+
+
 
 
 plot(Telemetry_Plot$X.intelcpu.0.temperature.6,Telemetry_Plot$X.intelcpu.0.power.0)
